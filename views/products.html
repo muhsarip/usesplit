@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'products', title: 'Products', pane: 'master' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxList: { dataSource: dataSource }">
+            <div data-options="dxTemplate : { name: 'item' }"
+                    data-bind="dxAction: function () {$root.navigateToDetails($data.ProductID);},
+                    css: { 'list-item-selected': ProductID === $root.selectedProductID()}">
+                <div data-bind="text: ProductName"/>
+            </div>
+        </div>
+    </div>  
+</div>

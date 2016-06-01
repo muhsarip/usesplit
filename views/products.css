@@ -1,0 +1,13 @@
+/* Put css styles for home view here */
+.dx-theme-ios7.dx-device-tablet .list-item-selected {
+  background: #ccf;
+}
+
+.dx-theme-android.dx-device-tablet .list-item-selected {
+  background: rgba(44,159,201,.8);
+}
+
+.dx-theme-win10 .list-item-selected {
+  background: #00c1ec;
+}
+
